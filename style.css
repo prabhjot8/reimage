@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  line-height: 1.6;
+  color: #000;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  z-index: 1000;
+  /* background: rgba(0, 0, 0, 0.3); */
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e74c3c;
+}
+
+/* main {
+    position: relative;
+} */
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5%;
+  background: transparent;
+  position: relative; /* Add this */
+  margin-top: 1.5rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  width: 60%;
+  line-height: 4.3rem;
+  text-align: left;
+  color: #000; /* Add this to ensure visibility */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #000; /* Add this to ensure visibility */
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.91rem 5%;
+}
+
+nav ul li a {
+  color: #333;
+}
+
+#heroAbout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  height: 4vw;
+  width: 27vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  opacity: 1;
+}
+
+.cta-button:hover {
+  background-color: #c0392b;
+}
+
+#feature {
+  display: flex;
+  padding: 5rem 5%;
+  background-color: #f4f4f4;
+}
+
+.feature-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.feature-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -------------------------About Us--------------------- */
+
+.projects {
+  padding: 0 5vw;
+  background-color: #000;
+  color: #fff;
+}
+.projects h2 {
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15rem;
+}
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.projectsImg {
+  height: 100vh;
+  width: 47.5vw;
+  /* background-color: var(--second-bg-color); */
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  /* transform: translateY(-50%); */
+  /* background-color: #fff; */
+}
+
+.projectsImg #pCPart1 {
+  display: flex;
+  position: relative;
+}
+
+.projectsImg #pCPart1 h1 {
+  font-size: 5.7rem;
+  width: 40%;
+  font-weight: 600;
+  line-height: 6.3rem;
+  display: flex;
+}
+
+.projectsImg #pCPart1 svg {
+  display: block;
+  margin: 0;
+  /* width: 50; */
+  height: 50vh;
+  position: absolute;
+  top: -30%;
+  right: 10%;
+}
+
+.projectsImg #pCPart1 #svg2 {
+  transform: translateX(-0%) rotate(60deg);
+}
+
+.projectsImg #pCPart1 #svg3 {
+  transform: translateX(-0%) rotate(120deg);
+}
+
+.projectsImg #pCPart1 .path {
+  stroke: url(#paint0_linear_213_710); /* Stroke with gradient */
+  stroke-width: 2; /* Thickness of the stroke */
+  fill: none; /* No fill, so only the stroke is visible */
+}
+
+.projectsImg #pCPart1 .path2 {
+  stroke: url(#paint1_linear_213_710); /* Stroke with gradient */
+  stroke-width: 2; /* Thickness of the stroke */
+  fill: none; /* No fill, so only the stroke is visible */
+}
+
+.projectsImg #pCPart1 .path3 {
+  stroke: url(#paint2_linear_213_710); /* Stroke with gradient */
+  stroke-width: 2; /* Thickness of the stroke */
+  fill: none; /* No fill, so only the stroke is visible */
+}
+
+.projectsImg #pCPart2 {
+  font-size: 5.7rem;
+  font-weight: 600;
+  line-height: 6.3rem;
+  color: #f9df21;
+  margin-bottom: 1rem;
+}
+
+.projectsImg #pCPart3 {
+  font-size: 1.23rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+
+.project {
+  width: 32.5vw;
+  margin: 15vh 0 5vh;
+  /* opacity: 0.2 !important;
+    scale: 0.8 !important; */
+}
+
+#project1 {
+  margin-top: 40vh;
+}
+
+.project:nth-of-type(3) {
+  margin-bottom: 38vh;
+}
+.project h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1.2rem;
+  /* color: var(--main-color); */
+  /* text-shadow: 0 0 25px var(--main-color), 0 0 40px var(--main-color); */
+}
+.project p {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+/* -------------------------Director Msg--------------------- */
+
+#directorMsgPage {
+  margin-top: 5vh;
+  /* padding-top: 8vh; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+#imgDiv {
+  /* width: 385px; */
+  margin-top: 6.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  /* width: 100%; */
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+}
+
+#directorMsgPage #imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+
+#femaleDirec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0; */
+}
+
+#directorMsgDiv {
+  width: 50%;
+  height: 100%;
+}
+
+#directorMsgDiv h1 {
+  padding-left: 5vw;
+  font-size: 5.5rem;
+  line-height: 4.7rem;
+  font-weight: 600;
+  padding-top: 11vh;
+}
+
+#directorsMsg {
+  background-color: #000;
+  margin-top: 1.3rem;
+  width: 53vw;
+  height: 57.5%;
+  padding: 12vh 4vw 1vw 4vw;
+  color: #fff;
+  position: relative;
+}
+
+#directorsMsg h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #f9df21;
+}
+
+.directorNames {
+  margin-top: 4vh;
+  text-align: end;
+}
+
+#directorsMsg h5 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+#directorsMsg p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+#directorsMsg #director2 {
+  position: absolute;
+  width: 53vw;
+  top: 0;
+  left: 0%;
+  padding: 12vh 4vw 1vw 4vw;
+  /* opacity: 0; */
+}
+
+#pageDirec {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
