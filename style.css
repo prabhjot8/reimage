@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: poppins !important;
+  font-family: poppins;
   line-height: 1.6;
   color: #000;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -32,7 +33,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e74c3c;
+  color: #f9df21;
 }
 
 nav ul {
@@ -52,11 +53,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #e74c3c;
+  color: #f9df21;
 }
 
 /* main {
-    position: relative;
+  position: relative;
 } */
 
 .video-container {
@@ -82,7 +83,7 @@ nav ul li a:hover {
 }
 
 #hero {
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,6 +107,7 @@ nav ul li a:hover {
 .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-weight: 600;
   color: #000; /* Add this to ensure visibility */
 }
 
@@ -142,7 +144,8 @@ nav ul li a {
 }
 
 .cta-button:hover {
-  background-color: #c0392b;
+  background-color: #f9df21;
+  color: #000;
 }
 
 #feature {
@@ -171,6 +174,118 @@ nav ul li a {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* -------------------------Product Page--------------------- */
+
+#productPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+#move {
+  display: flex;
+  height: 100%;
+}
+
+/* #productPage h1{
+  font-size: 30vw;
+  opacity: 0;
+  color: #fff;
+  cursor: default;
+} */
+
+#productTitle {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5vw;
+}
+
+#productTitle h1 {
+  width: 50vw;
+  margin-bottom: 2rem;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 700;
+}
+
+#productTitle h3 {
+  /* width: 60vw; */
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+#cards {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 23vw;
+  /* background-color: red; */
+  border-radius: 20px;
+  height: 70vh;
+  border: 1px solid black;
+  position: relative;
+  margin-left: 15vw;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.cardOverlay {
+  /* position: absolute; */
+  width: 23vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.329);
+  z-index: 2;
+  opacity: 0;
+  /* left: -300;
+  top:0 */
+}
+
+.card h1 {
+  position: absolute;
+  font-size: 4rem;
+  bottom: 1vw;
+  left: 1vw;
+  color: white;
+  opacity: 0;
+  /* clip-path: inset(0 100% 0 0); */
+  /* clip-path: inset(0 var(--_i,100%) 0 0); */
+  /* -webkit-mask:
+  linear-gradient(#000 0 0),
+  linear-gradient(#000 0 0);
+-webkit-mask-composite: xor;
+-webkit-mask-clip: text, padding-box; */
+}
+
+#card1 {
+  background-image: url("https://orflaxindia.com/wp-content/uploads/2023/08/photo1.jpeg");
+}
+
+#card2 {
+  background-image: url("https://orflaxindia.com/wp-content/uploads/2023/08/p4.webp");
+}
+#card3 {
+  background-image: url("https://orflaxindia.com/wp-content/uploads/2023/08/14.jpeg");
+}
+#card4 {
+  background-image: url("https://orflaxindia.com/wp-content/uploads/2023/08/8.jpeg");
+}
+
+#pageLeave {
+  width: 100%;
+  height: 100vw;
+  background-color: #000;
 }
 
 /* -------------------------About Us--------------------- */
@@ -269,7 +384,7 @@ nav ul li a {
   width: 32.5vw;
   margin: 15vh 0 5vh;
   /* opacity: 0.2 !important;
-    scale: 0.8 !important; */
+  scale: 0.8 !important; */
 }
 
 #project1 {
@@ -389,4 +504,75 @@ nav ul li a {
   width: 100%;
   height: 100vh;
   background-color: #000000;
+}
+
+/* ----------------------------Call Us Page----------------------------------- */
+
+#callUsPage {
+  width: 100%;
+  height: 100vh;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#callUsPage .bg_img {
+  height: 100vh;
+  width: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#callUsPage .bg_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#callUsPage .heading {
+  position: relative;
+  top: 35%;
+  left: 20%;
+  color: white;
+  font-size: 45px;
+  line-height: 90px;
+  letter-spacing: 1.5px;
+}
+#callUsPage .sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  position: relative;
+  top: -50px;
+  left: 65%;
+  padding-right: 100px;
+}
+#callUsPage .sidebar h3 {
+  color: gold;
+}
+#callUsPage .sidebar p {
+  color: white;
+}
+#callUsPage i {
+  margin: 5px;
+}
+#callUsPage button {
+  background-color: gold;
+  color: black;
+  position: relative;
+  left: 35%;
+  top: -120px;
+  z-index: 10;
+  padding: 10px;
+  cursor: pointer;
+}
+#callUsPage button:hover {
+  box-shadow: 0 0 15px rgb(135, 133, 133);
+  transform: scale(1.04);
+  transition: transform 0.1s ease;
+  background-color: goldenrod;
 }

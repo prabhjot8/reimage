@@ -164,7 +164,7 @@ gsap.to("header", {
     start: "top -80px",
     end: "top -80px",
     toggleActions: "play none none reverse",
-    marker: true,
+    // marker: true
   },
 });
 
@@ -214,7 +214,7 @@ window.addEventListener("load", function () {
       end: "top 35%",
       // end: "bottom center",    // End the animation when we scroll past it
       scrub: true, // Smooth animation as you scroll
-      markers: true,
+      // markers: true,
     },
   });
 
@@ -308,7 +308,7 @@ tl.to(
       start: "top 50%",
       end: "top 20%",
       scrub: true,
-      markers: true,
+      // markers :true,
       // pin: true
     },
   },
