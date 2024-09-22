@@ -358,3 +358,15 @@ gsap.from("#femaleDirec", {
     // pin: true
   },
 });
+
+ScrollTrigger.create({
+  trigger: ".section5", // black section
+  start: "top 10%",
+  end: "bottom 10%",
+  onEnter: () => {
+    gsap.to("nav a", { color: "white" });
+  },
+  onLeaveBack: () => {
+    gsap.to("nav a", { color: "black" });
+  },
+});
