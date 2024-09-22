@@ -55,10 +55,9 @@ ScrollTrigger.create({
 // -----------------------Landing Page------------------------
 
 const vwInPixels = window.innerWidth;
-const originalPath = `M 50 50 Q ${vwInPixels / 2} 50 ${vwInPixels - 600} 50`;
-const finalPath = `M ${vwInPixels - 600} 50 Q ${vwInPixels - 600} 50 ${
-  vwInPixels - 600
-} 50`;
+console.log(vwInPixels);
+const originalPath = `M 50 50 Q 350 50 700 50`;
+const finalPath = `M 700 50 Q 700 50 700 50`;
 
 const heroAbout = document.querySelector("#heroAbout");
 const heroAboutSvg = document.querySelector("#heroAbout svg");
